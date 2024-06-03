@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../static/styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div id = "root-container">
+
+        <div id = "title-container">
+            <h1> Password Generator</h1>
+        </div>
+
+        <div class = "separator"></div>
+
+        <div id = "generated-password-container">
+            <div id = "password-container"></div>
+            <button id = "copy-button">&#x2398;</button>
+        </div>
+        
+
+        <div id = "options">
+            <div id = "checkbox-container">
+                <input class = "checkbox" type="checkbox" name="lowercase-letters" value="lowercase-letters">
+                <label for="lowercase-letters">Lowercase Letters</label><br>
+        
+                <input class = "checkbox" type="checkbox" name="uppercase-letters" value="uppercase-letters">
+                <label for="uppercase-letters" >Uppercase Letters</label><br>
+        
+                <input class = "checkbox" type="checkbox" name="symbols" value="symbols">
+                <label for="symbols"> Symbols</label><br>
+                
+                <input class = "checkbox" type="checkbox" name="numbers" value="numbers">
+                <label for="numbers">Numbers</label><br>
+        
+            </div>
+            <div id = "desired-length-container">
+                <input id = "length-input" type ="text" placeholder="Enter length of password...">
+        </div>
+         </div>
+        <div id = "generate-password-button-container">
+            <button id = "generate-password-button">Generate Password</button>
+        </div>
+    </div>
+    
+
+
+
+    <script href = "../static/app.js"></script>
+</body>
+</html>
