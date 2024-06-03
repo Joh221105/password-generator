@@ -7,14 +7,40 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <section id = "heading">
+    <div id = "top-container">
         <h1> Password Generator</h1>
-    </section>
-    <section id = "password-interface">
-        <div>
-            
-        </div>
-    </section>
+    </div>
+    <div id = "bottom-container">
+    </div>
+    <div id = "generated-password-container">
+    </div>
+    <div id = "copy-button">
+        <div>&#x2398;</div>
+    </div>
+
+    <div id = "checkbox-container">
+        <input type="checkbox" name="lowercase-letters" value="lowercase-letters">
+        <label for="lowercase-letters">Lowercase Letters</label><br>
+
+        <input type="checkbox" name="uppercase-letters" value="uppercase-letters">
+        <label for="uppercase-letters" >Uppercase Letters</label><br>
+
+        <input type="checkbox" name="symbols" value="symbols">
+        <label for="symbols"> Symbols</label><br>
+        
+        <input type="checkbox" name="numbers" value="numbers">
+        <label for="numbers">Numbers</label><br>
+
+    </div>
+    <div id = "desired-length-container">
+        <input type ="text" placeholder="Length of password"
+    </div>
+    <div id = "generate-password-button">
+        <button>Generate Password</button>
+    </div>
+
+
+
     <script href = "../static/app.js"></script>
 </body>
 </html>
