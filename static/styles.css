@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    font-family: "Arial", sans-serif;
+}
+
+#title-container{
+    background-color: #333D79FF;
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom:20px;
+}
+
+#root-container{
+    background-color: #FAEBEFFF;
+    height:800px;
+    width: 800px;
+}
+
+#generated-password-container{
+    background-color:#333D79FF ;
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    width:75%;
+    height:100px;
+    align-items: center;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+#options{
+    display: flex;
+    justify-content: space-evenly;
+    color:#333D79FF;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+}
+
+
+#generate-password-button{
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #333D79FF;
+    color:#FAEBEFFF;
+    margin-left:33%;
+    font-size: 1.5rem;
+}
+
+#password-container{
+    background-color: #FAEBEFFF;
+    width: 85%;
+    margin-left:5%;
+    height:50%;
+    border-radius:10px;
+}
+
+#copy-button{
+    background-color: #FAEBEFFF;
+    color: #333D79FF;
+    font-size: 25px;
+    padding: 1px 5px;
+    margin-right: 3%;
+    border-radius: 10px solid black;
+    border-radius:10px;
+}
+
+#copy-button:hover{
+    background-color: #EDEDED;
+    color:black;
+    box-shadow: 0px 0px 5px #333D79FF;
+    cursor: pointer;
+}
+#desired-length-container{
+    align-self:center;
+    width: 300px;
+    height: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#length-input{
+    height:30%;
+    width:75%;
+    padding-left: 3%;
+    border-radius: 10px;
+    font-weight:700;
+    font-size:60%;
+}
+
+#generate-password-button:hover{
+    background-color: #EDEDED;
+    color:black;
+    box-shadow: 0px 0px 5px #333D79FF;
+    cursor: pointer;
+}
+
+.checkbox{
+    margin-top:20px;
+}
+
+.separator {
+    background-color: #FAEBEFFF;
+    height:50px;
+}
+
+
+h1 {
+    color: #FAEBEFFF;
+}
+
+
+

@@ -7,37 +7,45 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <div id = "top-container">
-        <h1> Password Generator</h1>
-    </div>
-    <div id = "bottom-container">
-    </div>
-    <div id = "generated-password-container">
-    </div>
-    <div id = "copy-button">
-        <div>&#x2398;</div>
-    </div>
 
-    <div id = "checkbox-container">
-        <input type="checkbox" name="lowercase-letters" value="lowercase-letters">
-        <label for="lowercase-letters">Lowercase Letters</label><br>
+    <div id = "root-container">
 
-        <input type="checkbox" name="uppercase-letters" value="uppercase-letters">
-        <label for="uppercase-letters" >Uppercase Letters</label><br>
+        <div id = "title-container">
+            <h1> Password Generator</h1>
+        </div>
 
-        <input type="checkbox" name="symbols" value="symbols">
-        <label for="symbols"> Symbols</label><br>
+        <div class = "separator"></div>
+
+        <div id = "generated-password-container">
+            <div id = "password-container"></div>
+            <button id = "copy-button">&#x2398;</button>
+        </div>
         
-        <input type="checkbox" name="numbers" value="numbers">
-        <label for="numbers">Numbers</label><br>
 
+        <div id = "options">
+            <div id = "checkbox-container">
+                <input class = "checkbox" type="checkbox" name="lowercase-letters" value="lowercase-letters">
+                <label for="lowercase-letters">Lowercase Letters</label><br>
+        
+                <input class = "checkbox" type="checkbox" name="uppercase-letters" value="uppercase-letters">
+                <label for="uppercase-letters" >Uppercase Letters</label><br>
+        
+                <input class = "checkbox" type="checkbox" name="symbols" value="symbols">
+                <label for="symbols"> Symbols</label><br>
+                
+                <input class = "checkbox" type="checkbox" name="numbers" value="numbers">
+                <label for="numbers">Numbers</label><br>
+        
+            </div>
+            <div id = "desired-length-container">
+                <input id = "length-input" type ="text" placeholder="Enter length of password...">
+        </div>
+         </div>
+        <div id = "generate-password-button-container">
+            <button id = "generate-password-button">Generate Password</button>
+        </div>
     </div>
-    <div id = "desired-length-container">
-        <input type ="text" placeholder="Length of password"
-    </div>
-    <div id = "generate-password-button">
-        <button>Generate Password</button>
-    </div>
+    
 
 
 
