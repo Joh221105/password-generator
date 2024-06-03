@@ -10,11 +10,6 @@ upper_case = list(string.ascii_uppercase)
 symbols = list(string.punctuation)
 numbers = list(string.digits)
 
-num_lower_case = int(input('How many lower case letters would you like?: '))
-num_upper_case = int(input('How many uppercase letters would you like?: '))
-num_symbol = int(input('How many symbols would you like?: '))
-num_digits = int(input('How many numbers would you like?: '))
-
 password = []
 
 def generate_elements(num, type_list):
