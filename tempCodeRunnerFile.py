@@ -24,8 +24,6 @@ def generate_password(length, bool_lower, bool_upper, bool_symbols, bool_numbers
     # keeps track of the number of elements in the generated password 
     count = 0
 
-    length = int(length)
-
     while(count < length):
 
         if bool_lower:
@@ -61,14 +59,13 @@ def home(name=None):
 
 @app.route("/generate", methods=["POST"])
 def send_password():
-    data = request.json
+    data = request.json()
     length = data.get('length')
     bool_lower = data.get('lower')
     bool_upper = data.get('upper')
     bool_symbols = data.get('symbols')
     bool_numbers = data.get('numbers')
     gen_password = generate_password(length, bool_lower, bool_upper, bool_symbols, bool_numbers)
-
     return jsonify({'password': gen_password})
 
 if __name__ == '__main__':
