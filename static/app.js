@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const generate_password_button = document.getElementById('generate-password-button');
     const password_display = document.getElementById('password-container');
+    const copy_button = document.getElementById('copy-button')
 
     generate_password_button.addEventListener("click", () => {
         const length_of_password = document.getElementById('length-input').value;
@@ -29,4 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error:', error))
     })
+
+    copy_button.addEventListener('click', () => {
+        const passwordText = password_display.innerText;
+        navigator.clipboard.writeText(passwordText)
+    })
+    
 })
